@@ -102,6 +102,21 @@ if (require.main === module) {
 
   console.log("Expecting: false");
   console.log("=>", hasTargetSum([1, 2, 5], 4));
+
+  console.log("");
+
+  console.log("Expecting: true");
+  console.log("=>", hasTargetSum([0, 2, 4, 6, 8], 8));
+
+  console.log("");
+
+  console.log("Expecting: false");
+  console.log("=>", hasTargetSum([], 10));
+
+  console.log("");
+
+  console.log("Expecting: false");
+  console.log("=>", hasTargetSum([1], 1));
 }
 
 module.exports = hasTargetSum;
